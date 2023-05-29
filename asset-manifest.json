@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tier-list-react/static/css/main.c3f21c99.css",
+    "main.js": "/tier-list-react/static/js/main.e4c0fc09.js",
+    "index.html": "/tier-list-react/index.html",
+    "main.c3f21c99.css.map": "/tier-list-react/static/css/main.c3f21c99.css.map",
+    "main.e4c0fc09.js.map": "/tier-list-react/static/js/main.e4c0fc09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3f21c99.css",
+    "static/js/main.e4c0fc09.js"
+  ]
+}
