@@ -9,7 +9,7 @@ const NavTierList = (props) => {
     props;
   return (
     <div className="nav-tier-list">
-      <ButtonLink text={"home"} path={"/"} />
+      <ButtonLink text={"home"} path={"/tier-list-react"} />
       <ButtonOption text="Add Item" functionOnClick={handleOpenCreatorItem} />
       <ButtonOption text="reset list" functionOnClick={handleRestartList} />
       <ButtonOption
