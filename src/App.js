@@ -1,11 +1,13 @@
-import MyRouter from './components/Router/Router'
+import MobileInfo from "./components/MobileInfo/MobileInfo";
+import MyRouter from "./components/Router/Router";
 
-import './sass/style/app.scss'
+import "./sass/style/app.scss";
 
 function App() {
   return (
     <div className="app">
-    <MyRouter/>
+      <MyRouter />
+      <MobileInfo/>
     </div>
   );
 }

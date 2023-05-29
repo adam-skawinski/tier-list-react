@@ -1,0 +1,19 @@
+@use "../../sass/untils/colors.scss" as _col;
+
+.mobile-info {
+    display: none;
+}
+@media (max-width: 1100px) {
+    .mobile-info {
+        position: absolute;
+        z-index: 10000;
+        height: 100%;
+        width: 100%;
+        background-color: _col.$gray-very-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
