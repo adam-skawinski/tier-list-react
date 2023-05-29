@@ -1,0 +1,12 @@
+@use "../untils/colors.scss" as _col;
+
+.app {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: _col.$gray-very-light;
+    min-height: 100vh;
+    color: _col.$gray-dark;
+    padding: 40px 0;
+}

@@ -1,0 +1,47 @@
+@use "../../sass/untils/colors.scss" as _col;
+@use "../../sass/untils/borders.scss" as _bor;
+@use "../../sass/untils/animations.scss" as _anim;
+
+.defult-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: _col.$gray-very-light;
+    border: _bor.$primary;
+    text-transform: capitalize;
+    color: _col.$gray-dark;
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: _col.$gray-dark;
+        transition: .1s ease-in;
+    }
+    &:hover {
+        animation: _anim.$shaked_animation;
+        &::before{
+            top: 0;
+        }
+        .content {
+            position: relative;
+            z-index: 3;
+            animation: _anim.$shaked_content_animation;
+            color: _col.$gray-very-light;
+        }
+    }
+    .content {
+        color: _col.$gray-dark;
+    }
+}

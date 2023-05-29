@@ -1,0 +1,13 @@
+@use "../untils/fonts.scss" as _fn;
+@use "../untils/colors.scss" as _col;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: _fn.$primary;
+    color: _col.$gray-dark;
+    font-weight: 900;
+    outline: none;
+    text-decoration: none;
+}

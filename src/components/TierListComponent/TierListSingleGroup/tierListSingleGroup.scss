@@ -1,0 +1,42 @@
+@use "../../../sass/untils/colors.scss" as _col;
+@use "../../../sass/untils/borders.scss" as _bor;
+@use "../../../sass/untils/animations.scss" as _anim;
+
+.group {
+    background-color: _col.$gray-very-light;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: _bor.$primary;
+    min-height: 130px;
+  
+    .dropable {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 45px;
+        background:#fff;
+        border-left: _bor.$primary;
+        .icon{
+            width: 30px;
+            height: 30px;
+            transition: .2s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+                animation: _anim.$shaked_small_animation;
+            }
+        }
+    }
+    &:nth-last-of-type(1) {
+        border: none;
+    }
+}

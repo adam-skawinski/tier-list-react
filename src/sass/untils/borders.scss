@@ -1,0 +1,3 @@
+@use "./colors.scss" as _col;
+
+$primary: 2px solid _col.$gray-dark;

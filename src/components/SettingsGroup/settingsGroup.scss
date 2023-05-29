@@ -1,0 +1,41 @@
+@use "../../sass/untils/colors.scss" as _col;
+@use "../../sass/untils/borders.scss" as _bor;
+
+.settings-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: _col.$gray-very-light;
+    position: absolute;
+    right: 43px;
+    height: 100%;
+    width: 500px;
+    padding: 10px;
+    gap: 10px;
+    border-left: _bor.$primary;
+    .icons-controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        input {
+            border: _bor.$primary;
+            font-size: 20px;
+            width: 90%;
+            text-align: center;
+        }
+        .icon{
+            justify-self: center;
+        }
+    }
+    .colors {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        .color {
+            width: 30px;
+            height: 30px;
+            border: _bor.$primary;
+            border-radius: 50%;
+        }
+    }
+}

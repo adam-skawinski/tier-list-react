@@ -1,0 +1,19 @@
+@use "../../../sass/untils/colors.scss" as _col;
+
+.item {
+    height: 128px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: _col.$gray-very-light;
+    overflow: hidden;
+    h2 {
+        color: #000;
+        text-transform: capitalize;
+    }
+    &:nth-of-type(1){
+        height: auto;
+    }
+}

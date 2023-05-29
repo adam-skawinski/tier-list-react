@@ -1,0 +1,8 @@
+@use "../../sass/untils/colors.scss" as _col;
+
+.header {
+    font-size: 100px;
+    letter-spacing: 20px;
+    text-align: center;
+    color: _col.$gray-dark;
+}

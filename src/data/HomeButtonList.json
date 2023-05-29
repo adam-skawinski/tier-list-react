@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "text":"Create Your Tier List",
+        "path":"/tierlist"
+    },
+    {
+        "id":3,
+        "text":"GitHub",
+        "path":"https://github.com/adam-skawinski/jsx-tier-list"
+    }
+]

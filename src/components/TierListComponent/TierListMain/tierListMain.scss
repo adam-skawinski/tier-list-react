@@ -1,0 +1,15 @@
+@use "../../../sass/untils/colors.scss" as _col;
+@use "../../../sass/untils/borders.scss" as _bor;
+
+.tier-list-main {
+    display: grid;
+    grid-template-columns: 1ft;
+    gap: 20px;
+    .tier-list-groups {
+        display: flex;
+        flex-direction: column;
+        background-color: _col.$gray;
+        border: _bor.$primary;
+        overflow: hidden;
+    }
+}

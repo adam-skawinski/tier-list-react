@@ -1,0 +1,20 @@
+@use "../../../sass/untils/colors.scss" as _col;
+
+.button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    background-color: _col.$gray;
+    border-radius: 14px 50px;
+    border: 5px solid _col.$gray-dark;
+    color: _col.$blue-very-dark;
+    font-size: 32px;
+    font-weight: 800;
+    transition: .3s ease-in-out;
+    &:hover {
+        background-color: _col.$yellow;
+    }
+}

@@ -1,0 +1,58 @@
+$shaked_animation: shaked .3s ease-in-out both;
+
+@keyframes shaked {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    75% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+$shaked_small_animation: shaked_small .3s ease-in-out both;
+
+@keyframes shaked_small {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(-7deg);
+    }
+    75% {
+        transform: rotate(7deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+$shaked_content_animation: shaked_content .4s ease-in-out both;
+
+@keyframes shaked_content {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
